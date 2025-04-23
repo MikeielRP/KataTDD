@@ -8,6 +8,10 @@ class testConjunto(unittest.TestCase):
     def test_unicoelemento(self):
         Conjunto=conjunto([5])
         self.assertEqual(5,Conjunto.promedio())
+    def test_retornaPromedio(self):
+        Conjunto= conjunto([5, 7])
+        self.assertEqual(6, conjunto.promedio())
+
 
 
 if __name__ == '__main__':
