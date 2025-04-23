@@ -11,6 +11,9 @@ class testConjunto(unittest.TestCase):
     def test_retornaPromedio(self):
         Conjunto= conjunto([5, 7])
         self.assertEqual(6, Conjunto.promedio())
+    def test_retornaPromedioelementos(self):
+        Conjunto= conjunto([2,4,8,9,10,15])
+        self.assertEqual((2+4+8+9+10+15)/6, Conjunto.promedio())
 
 
 
